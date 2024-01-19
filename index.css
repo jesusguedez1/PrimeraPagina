@@ -1,0 +1,310 @@
+:root{
+    --colortarjeta1: #e38626;
+    --colortarjeta2: #016773;
+    --colortarjeta3: #034041;
+    --fontTitulo:'Barlow Condensed', sans-serif; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 900px;
+    width: 100%;
+    background-color: #e6e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal{
+    height: 60%;
+    width: 1000px;
+    background-color: #e6e5e5;
+    display: flex;
+    border-radius: 13px;
+}
+.card1{
+    width: 750px;
+    background-color: var(--colortarjeta1);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;  
+    border-radius: 13px 0 0 13px;
+}
+.card2{
+    width: 750px;
+    background-color: var(--colortarjeta2);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+.card3{
+    width: 750px;
+    background-color: var(--colortarjeta3);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;  
+    border-radius: 0 13px 13px 0;
+}
+.card1 img, .card3 img{
+    position: relative;
+    bottom: 136px;
+    right: 60px;
+}
+.card2 img{
+    position: relative;
+    bottom: 144px;
+    right: 60px;
+}
+.card1 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    bottom: 85px;
+    right: 85px;
+    background-color: #83420064;
+}
+#Learn1{
+    border-radius: 20px;
+    height: 45px;
+    width: 135px;
+    color: var(--colortarjeta1);
+    position: relative;
+    top: 50px;
+    right: 43px;
+    background-color: #ffff;
+    font-size: 16px;
+}
+.card2 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    bottom: 85px;
+    right: 85px;
+    background-color: #0040496b;
+}
+#Learn2{
+    border-radius: 20px;
+    height: 45px;
+    width: 135px;
+    color: var(--colortarjeta2);
+    position: relative;
+    top: 50px;
+    right: 43px;
+    background-color: #ffff;
+    font-size: 16px;
+}
+.card3 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    bottom: 85px;
+    right: 85px;
+    background-color: #026d6e76;
+}
+#Learn3{
+    border-radius: 20px;
+    height: 45px;
+    width: 135px;
+    color: var(--colortarjeta3);
+    position: relative;
+    top: 50px;
+    right: 43px;
+    background-color: #ffff;
+    font-size: 16px;
+}
+.card1 h1{
+    position: relative;
+    bottom: 95px;
+    right: 60px;
+    font-size: 38px;
+    font-family: var(--fontTitulo);
+}
+.card2 h1{
+    position: relative;
+    bottom: 95px;
+    right: 73px;
+    font-size: 37px;
+    font-family: var(--fontTitulo);
+}
+.card3 h1{
+    position: relative;
+    bottom: 95px;
+    right: 58px;
+    font-size: 37px;
+    font-family: var(--fontTitulo);
+}
+.card1 p{
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    font-size: 17px;
+}
+.card2 p{
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    font-size: 17px;
+}
+.card3 p{
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    font-size: 17px;
+}
+#Learn4, #Learn5, #Learn6{
+    display: none;
+}
+
+@media(max-width: 800px){
+    
+    .principal{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1 , .card3{
+        height: 250px;
+        width: 390px;
+    }
+    .card2{
+        width: 390px;
+
+    }
+    .card1{
+        border-radius: 10px 10px 0 0;
+    }
+    .card3{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card1 button , .card3 button{
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 22px;
+        right: 33px;
+        border-radius: 100%;
+    }
+
+    .card1 img , .card3 img{
+        position: relative;
+        bottom: 16px;
+        right: 15px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .card2 img{
+        position: relative;
+        bottom: 15px;
+        height: 48px;
+        width: 48px;
+        right: 23px;  
+    }
+    .card2 button{
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 28px;
+        right: 43px;
+        border-radius: 100%;
+    }
+
+    .card1 h1, .card3 h1{
+        font-size: 33px;
+        bottom: 62px;
+        right: 100px;
+    }
+    .card2 h1{
+        font-size: 33px;
+        bottom: 62px;
+        right: 110px;
+    }
+
+    .card1 p, .card2 p, .card3 p{
+        font-size: 16px ;
+        position: relative;
+        bottom: 70px;
+        right: 15px;
+    }
+
+    #Learn1, #Learn2, #Learn3{
+        display: none;
+    }
+    #Learn4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    color: var(--colortarjeta1);
+    position: relative;
+    right: 85px;
+    top: 55px;
+    background-color: #ffff;
+    font-size: 15px;
+    }
+
+    #Learn5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 30px;
+        width: 120px;
+        color: var(--colortarjeta2);
+        position: relative;
+        right: 85px;
+        top: 55px;
+        background-color: #ffff;
+        font-size: 15px;
+        }
+
+    #Learn6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            width: 120px;
+            color: var(--colortarjeta3);
+            position: relative;
+            right: 85px;
+            top: 55px;
+            background-color: #ffff;
+            font-size: 15px;
+            }
+
+}
